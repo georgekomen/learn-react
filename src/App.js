@@ -6,12 +6,10 @@ import './App.css';
    render() {
      return (
     <div className="App">
-      ff
-      <div> clicks:  {this.props.clicks} </div>
+      <div onClick = {this.props.onClick}> clicks:  {this.props.clicks} </div>
     </div>
   );
  }
-  
 }
 
 export default App;
