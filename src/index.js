@@ -3,10 +3,14 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import Authoquiz from './components/authoquiz.js';
 
 let model = {clicks: 0};
 function render() {
-    ReactDOM.render(<App clicks = {model.clicks} onClick={() => {model.clicks += 1; render();}}/>, document.getElementById('root'));
+    // ReactDOM.render(<App clicks = {model.clicks} onClick= {() => {model.clicks += 1; console.log("fse"); render();}}/>, document.getElementById('root'));
+
+    ReactDOM.render(<Authoquiz />, document.getElementById('root'));
+
 }
 
 render();
