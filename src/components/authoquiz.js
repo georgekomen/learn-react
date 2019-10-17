@@ -1,11 +1,38 @@
-import React, { Component } from 'react'
+import React from 'react';
 
-export default class authoquiz extends Component {
-    render() {
-        return (
-            <div>
-                quiz
-            </div>
-        )
-    }
+function Header() {
+    return (
+        <div className="jumbotron container-fluids">
+            header
+        </div>
+    );
+}
+
+
+function Content() {
+    return (
+        <div>
+            frr
+        </div>
+    );
+}
+
+
+function Footer() {
+    return (
+        <div className="footer">
+            footer
+        </div>
+    );
+}
+
+
+export default function Authoquiz() {
+    return (
+        <div className="container-fluid">
+            <Header />
+            <Content />
+            <Footer />
+        </div>
+    );
 }

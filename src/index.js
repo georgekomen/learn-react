@@ -3,17 +3,8 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import Authoquiz from './components/authoquiz.js';
 
-let model = {clicks: 0};
-function render() {
-    // ReactDOM.render(<App clicks = {model.clicks} onClick= {() => {model.clicks += 1; console.log("fse"); render();}}/>, document.getElementById('root'));
-
-    ReactDOM.render(<Authoquiz />, document.getElementById('root'));
-
-}
-
-render();
+ReactDOM.render(<App />, document.getElementById('root'));
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: https://bit.ly/CRA-PWA
