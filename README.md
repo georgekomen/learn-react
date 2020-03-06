@@ -199,3 +199,47 @@ componentDidUpdate(prevProps, prevState) {
     }
 }
 ```
+
+`React router`
+- `router link`
+- router, route, switch, exact
+- link
+- useState, useEffect
+- `const data = await fetch('url');`
+  `const items = await data.json()`
+- match.params.{data_passed}
+- Router - https://www.youtube.com/watch?v=Law7wfdg_ls
+
+`state management`
+- state management - context api vs redux
+- react hooks enables having state in functional components. It was only possible to have state in class components before
+- Redux - https://www.youtube.com/watch?v=OSSpVLpuVWA
+- redux thunk for asynchronous backend calls
+- react react-redux
+
+Redux
+- store is where the state of your entire application lives
+- actions are sent/dispatched from the view which have payloads that can be read by reducers
+- reducers read the payload from the action and updates the store accordingly
+- action is an object with a type and a payload
+- send actions to the store with dispatch : `store.dispatch(action)`
+- how reducer raises an action to update the store state
+- reducers take 2 params, the initial state and the action
+- combine reducers
+- redux devtools
+- use `provider` to give app access to the store:
+- use `connect` to connect components in our app to the store
+- connect takes:
+  `mapStateToProps` -> receives the state of the store which can be used to decide what props we want to provide for that component
+                    -> it can take two args, the state and props passed to this component
+  `mapActionsToProps` / `matchDispatchToProps` -> allows us to dispatch actions from our components easily
+                                               -> it can take args: 'dispatch' and 'props'
+  `mergeProps` -> it takes these args: propsFromState, propsFromDispatch, ownProps
+
+
+- accessing props in matchActionsToProps
+- bind dispatch to actions in the component
+- import `bindActionCreators`
+
+
+- API requests with redux thunk middle-ware. Store enhancers
